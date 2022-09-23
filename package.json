@@ -1,0 +1,20 @@
+{
+  "name": "electronick_site_portfolio_2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alimbaeva/Electronick_Site_Portfolio_2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alimbaeva/Electronick_Site_Portfolio_2022/issues"
+  },
+  "homepage": "https://github.com/alimbaeva/Electronick_Site_Portfolio_2022#readme"
+}
