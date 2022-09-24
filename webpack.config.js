@@ -51,12 +51,21 @@ const cssLoaders = (extra) => {
     return loaders
 }
 
+const fileLoaderUse = (ext) => {
+    return [{
+        loader: 'file-loader',
+        options: {
+            outputPath: ext
+          }
+    }] 
+}
+
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
         main: './index.js',
-        analytics: './analitics.js'
+        analytics: './analitics.ts'
     },
     output: {
         filename: filename('js'),
@@ -108,21 +117,11 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,
-                use:[{
-                    loader: 'file-loader',
-                    options: {
-                        outputPath: 'images'
-                      }
-                }]  
+                use: fileLoaderUse('images') 
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use:[{
-                    loader: 'file-loader',
-                    options: {
-                        outputPath: 'fonts'
-                      }
-                }]
+                use: fileLoaderUse('fonts')
             },
             {
                 test: /\.xml$/,
@@ -133,7 +132,7 @@ module.exports = {
                 use: ['csv-loader']
             },
             {
-                test: /\.js$/,
+                test: /\.[tj]s$/,
                 exclude: /node_modules/,
                 use: ['babel-loader'],
             },
