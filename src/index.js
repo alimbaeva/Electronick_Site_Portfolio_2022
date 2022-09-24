@@ -5,6 +5,7 @@ import csv from './asset/data.csv';
 import person from './asset/SamsungGalaxyS22.png';
 import './syles/styles.css';
 import './syles/less.less';
+import './syles/scss.scss';
 
 const post = new Post('Webpack Post Title Asel', person);
 
