@@ -74,6 +74,7 @@ module.exports = {
         port: 4000,
         hot: isDev
     },
+    devtool: 'source-map',
     plugins: [
         new HTMLWebpackPlugin({
             template: './index.html',
@@ -130,7 +131,12 @@ module.exports = {
             {
                 test: /\.csv$/,
                 use: ['csv-loader']
-            }
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: ['babel-loader'],
+            },
         ]
     }
 }

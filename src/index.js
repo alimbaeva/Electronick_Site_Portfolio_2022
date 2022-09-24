@@ -3,6 +3,7 @@ import json from '@/asset/json.json';
 import xml from '@@/data.xml';
 import csv from './asset/data.csv';
 import person from './asset/SamsungGalaxyS22.png';
+import './bable';
 import './syles/styles.css';
 import './syles/less.less';
 import './syles/scss.scss';
