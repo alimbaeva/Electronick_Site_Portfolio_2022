@@ -563,8 +563,3 @@ module.exports = {
 
 [doc](https://www.taniarascia.com/how-to-use-webpack/)
 
-
-
-## ESLINT 
----
-
