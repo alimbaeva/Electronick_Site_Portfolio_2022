@@ -49,7 +49,7 @@ const cssLoaders = (extra) => {
         }
         loaders.push(extra);
      }
-    return loaders
+    return loaders,
 }
 
 const fileLoaderUse = (ext) => {
@@ -82,7 +82,7 @@ module.exports = {
     optimization: optimization(),
     devServer: {
         port: 4000,
-        hot: isDev
+        hot: isDev,
     },
     devtool: isDev ? 'source-map' : false,
     plugins: [
