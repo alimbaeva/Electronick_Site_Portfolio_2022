@@ -65,8 +65,7 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: './index.js',
-        analytics: './analitics.ts'
+        main: './index.ts'
     },
     output: {
         filename: filename('js'),
