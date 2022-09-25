@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -85,6 +86,7 @@ module.exports = {
     },
     devtool: isDev ? 'source-map' : false,
     plugins: [
+        ...esLintPlugin(development),
         new HTMLWebpackPlugin({
             template: './index.html',
             clean: true,

@@ -1,13 +1,48 @@
 {
-    "parser": "babel-eslint",
-    "rules": {
-        "no-unused-vars":"warn"
-    },
+    // "parser": "babel-eslint",
+    // "rules": {
+    //     "no-unused-vars":"warn"
+    // },
+    // "env": {
+    //     "es6": true,
+    //     "browser": true
+    // },
+    // "extends":[
+    //     "eslint:recomvended"
+    // ]
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "import",
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "plugin:import/recommended",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:import/recommended",
+      "airbnb-typescript/base"
+
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "sourceType": "module"
+      },
     "env": {
         "es6": true,
-        "browser": true
+        "browser": true,
+        "node": true
     },
-    "extends":[
-        "eslint:recomvended"
-    ]
+    "rules": {
+        "no-unused-vars":"warn",
+        "no-console": 2,
+        "no-loops/no-loops": 0,
+        "class-methods-use-this": "off",
+        "@typescript-eslint/no-explicit-any": 2,
+        "@typescript-eslint/no-var-requires": "off",
+        "max-len": ["warn", { "code": 500 }],
+        "prettier/prettier": 0,
+        "import/order": 1
+    }
 }
