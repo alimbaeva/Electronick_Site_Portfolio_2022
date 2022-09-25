@@ -66,7 +66,7 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: './index.ts'
+        main: './index.ts',
     },
     output: {
         filename: filename('js'),
@@ -107,15 +107,15 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: cssLoaders()
+                use: cssLoaders(),
             },
             {
                 test: /\.less$/,
-                use:cssLoaders('less-loader')
+                use:cssLoaders('less-loader'),
             },
             {
                 test: /\.s[ac]ss$/,
-                use:cssLoaders('sass-loader')
+                use:cssLoaders('sass-loader'),
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,
@@ -123,15 +123,15 @@ module.exports = {
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use: fileLoaderUse('fonts')
+                use: fileLoaderUse('fonts'),
             },
             {
                 test: /\.xml$/,
-                use: ['xml-loader']
+                use: ['xml-loader'],
             },
             {
                 test: /\.csv$/,
-                use: ['csv-loader']
+                use: ['csv-loader'],
             },
             {
                 test: /\.[tj]s$/,
