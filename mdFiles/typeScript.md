@@ -50,7 +50,9 @@
 
 ![ERROR](https://img.shields.io/badge/-<error_TS5055:_Cannot_write_file_'C:/Users_Асель/OneDrive/Desktop/Electronick_Site_Portfolio_2022/webpack.config.js'_because_it_would_overwrite_input_file.>-641E16?style=for-the-badge)
 
-![ERROR](https://img.shields.io/badge/-<error_TS6059:_File_'C:/Users/Асель/OneDrive/Desktop/Electronick_Site_Portfolio_2022/webpack.config.js'_is_not_under_'rootDir'_'C:/Users/Асель/OneDrive/Desktop/Electronick_Site_Portfolio_2022/src'._'rootDir'_is_expected_to_contain_all_source_files._The_file_is_in_the_program_because:_Matched_by_default_include_pattern_'**/*'>-641E16?style=for-the-badge)
+![ERROR](https://img.shields.io/badge/-<error_TS6059:_File_'C:/Users/Асель/OneDrive/Desktop/Electronick_Site_Portfolio_2022/webpack.config.>-641E16?style=for-the-badge)
+![ERROR](https://img.shields.io/badge/-<js'_is_not_under_'rootDir'_'C:/Users/Асель/OneDrive/Desktop/Electronick_Site_Portfolio_2022/src'.>-641E16?style=for-the-badge)
+![ERROR](https://img.shields.io/badge/-<_'rootDir'_is_expected_to_contain_all_source_files._The_file_is_in_the_program_because:_Matched_by_default_include_pattern_'**/*'>-641E16?style=for-the-badge)
 
 
 Сделала
