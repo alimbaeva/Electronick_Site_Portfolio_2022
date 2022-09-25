@@ -12,6 +12,8 @@ const post = new Post('Webpack Post Title Asel', person);
 
 console.log('Post to String: ', post.toString());
 
+const worn = 42;
+
 console.log('JSON: ', json);
 console.log('XML: ', xml)
 console.log('CSV===: ', csv)

@@ -60,6 +60,7 @@ const fileLoaderUse = (ext) => {
     }] 
 }
 
+
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
@@ -83,7 +84,7 @@ module.exports = {
         port: 4000,
         hot: isDev
     },
-    devtool: 'source-map',
+    devtool: isDev ? 'source-map' : false,
     plugins: [
         new HTMLWebpackPlugin({
             template: './index.html',
@@ -134,7 +135,7 @@ module.exports = {
             {
                 test: /\.[tj]s$/,
                 exclude: /node_modules/,
-                use: ['babel-loader'],
+                use: ['babel-loader', 'eslint-loader']
             },
         ]
     }
